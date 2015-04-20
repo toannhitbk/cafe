@@ -12,21 +12,42 @@
 */
 
 //Css,html....
-Route::group(['namespace'=>'Frontend'], function(){
-	Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
-    Route::get('/menu', ['as' => 'menu', 'uses' => 'MenuController@index']);
-    Route::get('/gallery', ['as' => 'gallery', 'uses' => 'GalleryController@index']);
-    Route::get('/contact', ['as' => 'contact', 'uses' => 'ContactController@index']);
+Route::group(['namespace'=>'Frontend'], function()
+{
+	Route::get('/', [
+		'as' => 'home', 
+		'uses' => 'HomeController@index'
+	]);
+    Route::get('/menu', [
+    	'as' => 'menu', 
+    	'uses' => 'MenuController@index'
+    ]);
+    Route::get('/gallery', [
+    	'as' => 'gallery', 
+    	'uses' => 'GalleryController@index'
+    ]);
+    Route::get('/contact', [
+    	'as' => 'contact', 
+    	'uses' => 'ContactController@index'
+    ]);
 });
 
 //Admin
-Route::group(['prefix' => 'admin','namespace'=>'Backend'], function(){
-	Route::get('index', ['as' => 'dashboard', 'uses' => 'HomeController@index']);
-	Route::match(array('get', 'post'),'login', [ 'as' => 'login', 'uses' => 'LoginController@login']);
+Route::group(['namespace'=>'Backend'], function()
+{
+	Route::get('admin', [
+		'as' => 'dashboard', 
+		'uses' => 'HomeController@index'
+	]);
+	Route::get('/products', [
+		'as' => 'products', 
+		'uses' => 'HomeController@index'
+	]);
 });
 
 Route::controllers([
-	'admin' => 'Auth\AuthController',
+	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
 

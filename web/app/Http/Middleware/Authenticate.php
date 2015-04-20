@@ -32,7 +32,6 @@ class Authenticate {
 	 */
 	public function handle($request, Closure $next)
 	{
-
 		if ($this->auth->guest())
 		{
 			if ($request->ajax())
@@ -41,7 +40,7 @@ class Authenticate {
 			}
 			else
 			{
-				return redirect()->guest(route('login'));
+				return redirect()->guest('auth/login');
 			}
 		}
 

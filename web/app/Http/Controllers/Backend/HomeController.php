@@ -31,7 +31,7 @@ class HomeController extends BackendBaseController {
 	 */
 	public function index()
 	{
-		return view('backend.home');
+		return view('backend.home.home');
 	}
 	public function login(){
 		return view('backend.login');
