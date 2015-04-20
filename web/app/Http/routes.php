@@ -13,11 +13,10 @@
 
 //Css,html....
 Route::group(['namespace'=>'Frontend'], function(){
-	Route::get('/', 'HomeController@index');
-    Route::get('/index.html', 'HomeController@index');
-    Route::get('/menu.html', 'MenuController@index');
-    Route::get('/gallery.html', 'GalleryController@index');
-    Route::get('/contact.html', 'ContactController@index');
+	Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
+    Route::get('/menu', ['as' => 'menu', 'uses' => 'MenuController@index']);
+    Route::get('/gallery', ['as' => 'gallery', 'uses' => 'GalleryController@index']);
+    Route::get('/contact', ['as' => 'contact', 'uses' => 'ContactController@index']);
 });
 
 //Admin

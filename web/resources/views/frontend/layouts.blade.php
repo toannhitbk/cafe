@@ -44,10 +44,10 @@
         </div>
 
         <ul id="bazingaMenu">
-            <li class="first active"><a href="index.html" title="Cafe">kawiarnia</a></li>
-            <li class="second"><a href="menu.html" title="Menu">menu</a></li>
-            <li class="third"><a href="gallery.html" title="Galeria">galeria</a></li>
-            <li class="fourth"><a href="contact.html" title="Kontakt">kontakt</a></li>
+            <li class="first active"><a href="{{route('home')}}" title="Cafe">kawiarnia</a></li>
+            <li class="second"><a href="{{route('menu')}}" title="Menu">menu</a></li>
+            <li class="third"><a href="{{route('gallery')}}" title="Gallery">galeria</a></li>
+            <li class="fourth"><a href="{{route('contact')}}" title="Contact">kontakt</a></li>
         </ul>
 
         <div class="bazingaClear"></div>
