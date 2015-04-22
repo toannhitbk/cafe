@@ -21,7 +21,7 @@ class GalleryController extends FrontendBaseController {
 	 */
 	public function __construct()
 	{
-		$this->middleware('guest');
+
 	}
 
 	/**

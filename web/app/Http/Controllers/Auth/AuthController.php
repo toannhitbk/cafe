@@ -31,8 +31,16 @@ class AuthController extends Controller {
 	{
 		$this->auth = $auth;
 		$this->registrar = $registrar;
-
 		$this->middleware('guest', ['except' => 'getLogout']);
+	}
+	public function getRegister()
+	{
+		if ($this->auth->check())
+		{
+			return view('auth.register');
+		}else{
+			return redirect('/admin');
+		}
 	}
 
 }
