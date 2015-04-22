@@ -33,15 +33,31 @@ Route::group(['namespace'=>'Frontend'], function()
 });
 
 //Admin
-Route::group(['namespace'=>'Backend'], function()
+Route::group(['namespace'=>'Backend','prefix' => 'admin','middleware' => 'auth'], function()
 {
-	Route::get('admin', [
+	Route::get('/', [
 		'as' => 'dashboard', 
 		'uses' => 'HomeController@index'
 	]);
+	Route::get('producttype', [
+		'as' => 'producttype', 
+		'uses' => 'ProductTypeController@index'
+	]);
 	Route::get('/products', [
 		'as' => 'products', 
-		'uses' => 'HomeController@index'
+		'uses' => 'ProductsController@index'
+	]);
+	Route::get('/setting', [
+		'as' => 'setting', 
+		'uses' => 'SettingController@index'
+	]);
+	Route::get('/contacts', [
+		'as' => 'contacts', 
+		'uses' => 'ContactsController@index'
+	]);
+	Route::get('/images', [
+		'as' => 'images', 
+		'uses' => 'ImagesController@index'
 	]);
 });
 

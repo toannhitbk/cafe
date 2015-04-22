@@ -1,9 +1,9 @@
 <?php namespace App\Http\Controllers\Backend;
 
 
-class HomeController extends BackendBaseController {
+class SettingController extends BackendBaseController {
 
-	/*
+		/*
 	|--------------------------------------------------------------------------
 	| Home Controller
 	|--------------------------------------------------------------------------
@@ -31,6 +31,6 @@ class HomeController extends BackendBaseController {
 	 */
 	public function index()
 	{
-		return view('backend.home.home');
+		return view('backend.setting.index');
 	}
 }
