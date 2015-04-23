@@ -1,8 +1,14 @@
 @extends('backend.layouts')
 @section('contents')
 	<div class="row">
-        <div class="col-md-12">
-          <table class="table table-bordered">
+        <div class="col-sm-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+           <button class="btn btn-lg btn-primary" type="button">Tạo mới</button></h3>
+            </div>
+            <div class="panel-body">
+              <table class="table table-striped table-hover">
             <thead>
               <tr>
                 <th>#</th>
@@ -16,10 +22,16 @@
                 <td>1</td>
                 <td>Chocolate</td>
                 <td>Hiện</td>
-                <td><button class="btn btn-xs btn-default" type="button">Sửa</button><button class="btn btn-xs btn-danger" type="button">Xoá</button></td>
+                <td>
+                    <button class="btn btn-xs btn-default" data-target="#gridSystemEdit" data-toggle="modal" type="button">Sửa</button>
+                    <button class="btn btn-xs btn-danger" data-toggle="modal" data-target="#gridSystemDelete" type="button">Xoá</button>
+                </td>
               </tr>
             </tbody>
           </table>
+            </div>
+          </div>
         </div>
+</div>
        
 @stop

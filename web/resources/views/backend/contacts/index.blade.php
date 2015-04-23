@@ -6,7 +6,7 @@
             <thead>
               <tr>
                 <th>#</th>
-                <th>Tên danh mục</th>
+                <th>Email</th>
                 <th>Trạng thái</th>
                 <th>Thiết lập</th>
               </tr>
@@ -14,9 +14,9 @@
             <tbody>
               <tr>
                 <td>1</td>
-                <td>Chocolate</td>
-                <td>Hiện</td>
-                <td><button class="btn btn-xs btn-default" type="button">Sửa</button><button class="btn btn-xs btn-danger" type="button">Xoá</button></td>
+                <td>toanbk@hotmail.com.vn</td>
+                <td>Đã xem</td>
+                <td><button class="btn btn-xs btn-default" type="button">Phản hồi</button><button class="btn btn-xs btn-danger" type="button">Xoá</button></td>
               </tr>
             </tbody>
           </table>
