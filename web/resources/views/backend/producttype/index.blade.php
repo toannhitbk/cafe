@@ -61,9 +61,8 @@
 						<label class="control-label col-sm-2" for="tenDanhMuc">Trạng thái:</label>
 						<div class="col-sm-10">
 							<select class="form-control">
-								<option selected="selected">Mustard</option>
-								<option>Ketchup</option>
-								<option>Relish</option>
+								<option selected="selected">Hiện</option>
+								<option>Ẩn</option>
 							</select>
 						</div>
 					</div>
@@ -93,26 +92,8 @@
 			<div class="modal-body">
 				<form class="form-horizontal" role="form">
 					<div class="form-group">
-						<label class="control-label col-sm-2" for="tenDanhMuc">Tên danh
-							mục:</label>
-						<div class="col-sm-10">
-							<input type="text" class="form-control" id="tenDanhMuc"
-								placeholder="Nhập tên danh mục">
-						</div>
-					</div>
-					<div class="form-group">
-						<label class="control-label col-sm-2" for="tenDanhMuc">Trạng thái:</label>
-						<div class="col-sm-10">
-							<select class="form-control">
-								<option selected="selected">Mustard</option>
-								<option>Ketchup</option>
-								<option>Relish</option>
-							</select>
-						</div>
-					</div>
-					<div class="form-group">
 						<div class="col-sm-offset-2 col-sm-10">
-							<button type="submit" class="btn btn-default">Submit</button>
+							<button type="submit" class="btn btn-default">Xoá</button>
 						</div>
 					</div>
 				</form>
